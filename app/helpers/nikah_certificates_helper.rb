@@ -1,0 +1,2 @@
+module NikahCertificatesHelper
+end

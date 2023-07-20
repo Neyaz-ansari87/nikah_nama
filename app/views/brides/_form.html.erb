@@ -1,0 +1,32 @@
+<%= form_with(model: bride) do |form| %>
+  <% if bride.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bride.errors.count, "error") %> prohibited this bride from being saved:</h2>
+
+      <ul>
+        <% bride.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :surname %>
+    <%= form.text_field :surname, class: "form-control" %>
+  </div>
+
+  <div class="form-actions">
+    <%= form.submit nil, class: "btn btn-primary" %>
+  </div>
+<% end %>

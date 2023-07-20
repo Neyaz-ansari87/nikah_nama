@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Brides</h4>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>First name:</strong><%= @bride.first_name %></li>
+      <li class="list-group-item"><strong>Last name:</strong> <%= @bride.last_name %></li>
+      <li class="list-group-item"><strong>Surname:</strong> <%= @bride.surname %></li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <%= link_to 'Edit', edit_bride_path(@bride), class: "btn btn-sm btn-primary" %> |
+    <%= link_to 'Back', brides_path, class: "btn btn-sm btn-secondary"  %>
+  </div>
+</div>

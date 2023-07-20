@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  box-sizing: border-box;
+}
+
+@media print{
+  .no-print, .no-print *{
+    display: none !important;
+  } 
+  .print-m-0{
+    margin: 0 !important;
+  }
+} 
+
+.btn{
+  padding: 10px 17px; 
+  border-radius: 3px; 
+  background: #f4b71a; 
+  border: none; 
+  font-size: 12px; 
+  margin: 10px 5px;
+}
+
+.toolbar{
+  background: #333; 
+  width: 100vw; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  text-align: center;
+}
+
+.cert-container {
+  margin:65px 0 10px 0; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center;
+}
+
+.cert {
+  width:800px; 
+  height:600px; 
+  padding:15px 20px; 
+  text-align:center; 
+  position: relative; 
+  z-index: -1;
+}
+
+.cert-bg {
+  position: absolute; 
+  left: 0px; 
+  top: 0; 
+  z-index: -1;
+  width: 100%;
+}
+
+.cert-content {
+  width:750px; 
+  height:470px; 
+  padding:70px 60px 0px 60px; 
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+h1 {
+  font-size:44px;
+}
+
+p {
+  font-size:25px;
+}
+
+small {
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.bottom-txt {
+  padding: 12px 5px; 
+  display: flex; 
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.bottom-txt * {
+  white-space: nowrap !important;
+}
+
+.other-font {
+  font-family: Cambria, Georgia, serif;
+  font-style: italic;
+}
+
+.ml-215 {
+  margin-left: 215px;
+}

@@ -1,0 +1,27 @@
+<%= form_with(model: nikah_certificate) do |form| %>
+  <% if nikah_certificate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(nikah_certificate.errors.count, "error") %> prohibited this nikah_certificate from being saved:</h2>
+
+      <ul>
+        <% nikah_certificate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :bride_name %>
+    <%= form.text_field :bride_name, class: "form-control"  %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :groom_name %>
+    <%= form.text_field :groom_name, class: "form-control"  %>
+  </div>
+
+  <div class="form-actions">
+    <%= form.submit nil, class: "btn btn-primary" %>
+  </div>
+<% end %>

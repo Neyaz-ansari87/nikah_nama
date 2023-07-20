@@ -1,0 +1,34 @@
+<br>
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <span class="h5">Nikah Certificates</span>
+    </div>
+    <div class="card-text">
+      <table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Bride name</th>
+      <th>Groom name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <% @nikah_certificates.each do |nikah_certificate| %>
+      <tr>
+        <td><%= nikah_certificate.bride_name %></td>
+        <td><%= nikah_certificate.groom_name %></td>
+        <td><%= link_to 'Show', nikah_certificate %></td>
+        <td><%= link_to 'Edit', edit_nikah_certificate_path(nikah_certificate) %></td>
+        <td><%= link_to 'Destroy', nikah_certificate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%#= link_to "PDF", nikah_certificates_path(format: :pdf) %>
+
+<%= link_to 'New Nikah Certificate', new_nikah_certificate_path %>

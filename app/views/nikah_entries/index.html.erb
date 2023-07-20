@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nikah Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nikah date</th>
+      <th>User</th>
+      <th>Nikah address</th>
+      <th>Bride name</th>
+      <th>Groom name</th>
+      <th>Meahar amount</th>
+      <th>Groom parent name</th>
+      <th>Bride parent name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nikah_entries.each do |nikah_entry| %>
+      <tr>
+        <td><%= nikah_entry.nikah_date %></td>
+        <td><%= nikah_entry.user_id %></td>
+        <td><%= nikah_entry.nikah_address %></td>
+        <td><%= nikah_entry.bride_name %></td>
+        <td><%= nikah_entry.groom_name %></td>
+        <td><%= nikah_entry.meahar_amount %></td>
+        <td><%= nikah_entry.groom_parent_name %></td>
+        <td><%= nikah_entry.bride_parent_name %></td>
+        <td><%= link_to 'Show', nikah_entry %></td>
+        <td><%= link_to 'Edit', edit_nikah_entry_path(nikah_entry) %></td>
+        <td><%= link_to 'Destroy', nikah_entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nikah Entry', new_nikah_entry_path %>

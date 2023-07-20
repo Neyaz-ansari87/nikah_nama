@@ -1,0 +1,2 @@
+class Bride < ApplicationRecord
+end

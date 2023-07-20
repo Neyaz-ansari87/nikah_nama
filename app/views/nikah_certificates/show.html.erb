@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bride name:</strong>
+  <%= @nikah_certificate.bride_name %>
+</p>
+
+<p>
+  <strong>Groom name:</strong>
+  <%= @nikah_certificate.groom_name %>
+</p>
+
+<%#= link_to 'Edit', edit_nikah_certificate_path(@nikah_certificate) %> 
+<%#= link_to 'Back', nikah_certificates_path %>
+<%#= link_to 'preview as PDF ', nikah_certificates_path %>
+
+<%= link_to 'Download As PDF', nikah_certificate_path(@nikah_certificate, format: :pdf) %>
+<%#= link_to ' PDF', pdf_download_path(@nikah_certificate, format: :pdf)%>
+

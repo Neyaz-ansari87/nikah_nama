@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <span class="h5">Grooms</span>
+    </div>
+    <div class="card-text">
+      <table class="table table-sm">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Surname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grooms.each do |groom| %>
+      <tr>
+        <td><%= groom.first_name %></td>
+        <td><%= groom.last_name %></td>
+        <td><%= groom.surname %></td>
+        <td><%= link_to 'Show', groom,class:"btn btn-success" %></td>
+        <td><%= link_to 'Edit', edit_groom_path(groom), class: "btn btn-sm btn-primary" %></td>
+        <td><%= link_to 'Destroy', groom, method: :delete, class: "btn btn-sm btn-danger", data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Groom', new_groom_path, class: "btn btn-sm btn-primary" %>
+</div>
+</div>
+</div>

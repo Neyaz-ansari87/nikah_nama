@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sign_label: MyString
+  sign_value: MyString
+  sign_image: MyString
+  nikah_entry: one
+
+two:
+  sign_label: MyString
+  sign_value: MyString
+  sign_image: MyString
+  nikah_entry: two

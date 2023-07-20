@@ -1,0 +1,2 @@
+class Groom < ApplicationRecord
+end

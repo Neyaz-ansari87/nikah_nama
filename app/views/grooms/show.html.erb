@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @groom.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @groom.last_name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @groom.surname %>
+</p>
+
+<%= link_to 'Edit', edit_groom_path(@groom) %> |
+<%= link_to 'Back', grooms_path %>

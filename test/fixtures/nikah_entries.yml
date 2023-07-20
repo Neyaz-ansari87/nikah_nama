@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nikah_date: 2023-05-24 20:20:49
+  user: one
+  nikah_address: MyText
+  bride_name: MyString
+  groom_name: MyString
+  meahar_amount: MyText
+  groom_parent_name: MyString
+  bride_parent_name: MyString
+
+two:
+  nikah_date: 2023-05-24 20:20:49
+  user: two
+  nikah_address: MyText
+  bride_name: MyString
+  groom_name: MyString
+  meahar_amount: MyText
+  groom_parent_name: MyString
+  bride_parent_name: MyString
